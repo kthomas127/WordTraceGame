@@ -8,6 +8,7 @@ CELL_SIZE = 120
 GRID_SIZE = 3
 WIDTH = HEIGHT = CELL_SIZE * GRID_SIZE
 
+RED = (255, 0, 0)
 BG = (240, 240, 240)
 GRID_COLOR = (0, 0, 0)
 PATH_COLOR = (30, 30, 30)
@@ -132,7 +133,7 @@ def main():
         screen.blit(wtxt, (10, HEIGHT + 10))
 
         # Feedback after release
-        ftxt = SMALL.render(feedback, True, (0, 120, 0) if "VALID" in feedback else (180, 0, 0))
+        ftxt = SMALL.render(feedback, False, (180, 0, 0) if "INVALID" in feedback else (0, 120, 0))
         screen.blit(ftxt, (10, HEIGHT + 40))
 
         pygame.display.flip()
