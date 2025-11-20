@@ -5,4 +5,4 @@ The game looks like this:
 
 You select select the word like this
 ![alt text](/images/play.png)
-![alt text](/images/wrong.png)
+![alt text](/images/incorrect.png)
