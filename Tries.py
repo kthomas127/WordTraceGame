@@ -34,18 +34,18 @@ class Trie:
         return True
     
 # testing
-ops = [
-    ("insert", "top"),
-    ("insert", "bye"),
-    ("has_prefix", "to"),
-    ("search", "to"),
-    ("insert", "to"),
-    ("search", "to"),
-]
+# ops = [
+#     ("insert", "top"),
+#     ("insert", "bye"),
+#     ("has_prefix", "to"),
+#     ("search", "to"),
+#     ("insert", "to"),
+#     ("search", "to"),
+# ]
 
-trie = Trie()
+# trie = Trie()
 
-for op, arg in ops:
-    result = getattr(trie, op)(arg)
-    if result is not None:
-        print(result)
+# for op, arg in ops:
+#     result = getattr(trie, op)(arg)
+#     if result is not None:
+#         print(result)
