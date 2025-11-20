@@ -1,5 +1,5 @@
 from typing import List
-from Tries import *
+from WordTraceGame.trie import *
 from grid import grid
 
 def find_all_words(board: List[List[str]], trie: Trie) -> List[str]:
