@@ -1,8 +1,9 @@
 from typing import List
 from trie import *
-from grid import grid
+from grid import load_grid
 
 def find_all_words(board: List[List[str]], trie: Trie) -> List[str]:
+    grid = load_grid()
     rows, columns = len(grid), len(grid[0])
     found = set()
 

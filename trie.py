@@ -25,13 +25,13 @@ class Trie:
             node = node.children[c]
         return node.is_word
     
-    def has_prefix(self, prefix: str) -> bool:
+    def has_prefix(self, prefix: str) -> TrieNode | None:
         node = self.root
         for c in prefix:
             if c not in node.children:
-                return False
+                return None
             node = node.children[c]
-        return True
+        return node
     
 # testing
 # ops = [
