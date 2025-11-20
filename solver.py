@@ -1,5 +1,5 @@
 from typing import List
-from WordTraceGame.trie import *
+from trie import *
 from grid import grid
 
 def find_all_words(board: List[List[str]], trie: Trie) -> List[str]:
@@ -14,7 +14,7 @@ def find_all_words(board: List[List[str]], trie: Trie) -> List[str]:
         prefix += char
         path.append((r, c))
 
-        if node.end:
+        if node.is_word:
             found.add((prefix, tuple(path)))
 
         # check adjacent values
